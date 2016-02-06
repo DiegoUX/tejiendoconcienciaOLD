@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="/wp-content/themes/tejiendoconciencia-child/style.css">
 	<link href="/wp-content/themes/tejiendoconciencia-child/assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   	<link href="/wp-content/themes/tejiendoconciencia-child/assets/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
   	<!--[if IE]>
       	<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   	<![endif]-->
@@ -36,6 +38,12 @@ $space_class = '';
 
 		<header id="header">
 			<nav id="site-navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div id="logo">
+					<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<!-- Quitar y poner como bkg del "a" (pedir a Ceci logo mas chico) -->
+						<img src="wp-content/themes/tejiendoconciencia-child/images/logo.png" alt="TejiendoConCiencia Logo">
+					</a>
+				</div>
 				<h3 class="sr-only"><?php _e( 'Main menu', 'arcade' ); ?></h3>
 				<a class="sr-only" href="#primary" title="<?php esc_attr_e( 'Skip to content', 'arcade' ); ?>"><?php _e( 'Skip to content', 'arcade' ); ?></a>
 
@@ -52,34 +60,42 @@ $space_class = '';
 					$menu_class = ( is_rtl() ) ? ' navbar-right' : '';
 					wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'nav navbar-nav' . $menu_class, 'fallback_cb' => 'bavotasan_default_menu' ) );
 					?>
+					<div id="menu-social" class="menu navbar-right">
+						<!--<?php 
+						wp_nav_menu( array( 'theme_location' => 'secondary', 'container' => '', 'menu_class' => 'menu-items' . $menu_class, 'fallback_cb' => 'bavotasan_default_menu' ) );
+						?>-->
+					</div>
 				</div>
 			</nav><!-- #site-navigation -->
-
 			 <div class="title-card-wrapper">
                 <div class="title-card">
     				<div id="site-meta">
-    					<h1 id="site-title">
-    						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-    					</h1>
+    					<!-- <h1 id="site-title-custom"> -->
+    						<!-- <a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> -->
+    						<!-- <a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+								<img src="wp-content/themes/tejiendoconciencia-child/images/logo.png" alt="TejiendoConCiencia Logo">
+    						</a> -->
+    					<!-- </h1> -->
 
-    					<?php if ( $bavotasan_theme_options['header_icon'] ) { ?>
+
+    					<!--<?php if ( $bavotasan_theme_options['header_icon'] ) { ?>
     					<i class="fa <?php echo $bavotasan_theme_options['header_icon']; ?>"></i>
     					<?php } else {
     						$space_class = ' class="margin-top"';
-    					} ?>
+    					} ?>-->
 
-    					<h2 id="site-description"<?php echo $space_class; ?>>
+    					<h2 id="site-description-custom"<?php echo $space_class; ?>>
     						<?php bloginfo( 'description' ); ?>
     					</h2>
-						<?php
+						<!--<?php
 						/**
 						 * You can overwrite the defeault 'See More' text by defining the 'BAVOTASAN_SEE_MORE'
 						 * constant in your child theme's function.php file.
 						 */
-						if ( ! defined( 'BAVOTASAN_SEE_MORE' ) )
-							define( 'BAVOTASAN_SEE_MORE', __( 'See More', 'arcade' ) );
-						?>
-    					<a href="#" id="more-site" class="btn btn-default btn-lg"><?php echo BAVOTASAN_SEE_MORE; ?></a>
+						// if ( ! defined( 'BAVOTASAN_SEE_MORE' ) )
+							// define( 'BAVOTASAN_SEE_MORE', __( 'See More', 'arcade' ) );
+						?>-->
+    					<!-- <a href="#" id="more-site" class="btn btn-default btn-lg"><?php echo BAVOTASAN_SEE_MORE; ?></a> -->
     				</div>
 
     				<?php

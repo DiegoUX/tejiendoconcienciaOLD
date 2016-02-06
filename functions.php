@@ -6,4 +6,7 @@ function theme_enqueue_styles() {
 
 }
 
+// Add Secondary menu for Social Media.
+register_nav_menu( 'secondary', __( 'Secondary Menu', 'arcade' ) );
+
 ?>

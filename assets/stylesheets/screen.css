@@ -66,3 +66,107 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 2, ../sass/_general.scss */
+.basic h1, .basic h2, .basic h3, .basic h4, .basic h5, .basic h6 {
+  color: #282828;
+  font-family: 'Ubuntu Condensed', sans-serif !important;
+  text-transform: uppercase;
+}
+/* line 8, ../sass/_general.scss */
+.basic h1 a, .basic h2 a, .basic h3 a, .basic h4 a, .basic h5 a, .basic h6 a {
+  color: #282828;
+}
+
+/* line 15, ../sass/_general.scss */
+.only-on-home #logo {
+  -webkit-animation: dropHeader 1 0.75s ease-in;
+  animation: dropHeader 1 0.75s ease-in;
+}
+
+/* line 21, ../sass/_general.scss */
+#site-description-custom {
+  font-size: 42px;
+  margin-top: 150px;
+  color: #ffffff;
+  position: relative;
+  padding: 0 18%;
+  line-height: 120%;
+  text-transform: none;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 300;
+  font-style: italic;
+  text-shadow: 0 0 10px rgba(2, 2, 2, 0.95);
+  -webkit-animation: fadeHeader 1 1s ease-in;
+  animation: fadeHeader 1 1s ease-in;
+}
+
+/* line 40, ../sass/_general.scss */
+#site-navigation {
+  background: rgba(112, 101, 57, 0) none repeat scroll 0 0;
+  margin-top: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+/* line 47, ../sass/_general.scss */
+#site-navigation #logo {
+  position: absolute;
+}
+/* line 51, ../sass/_general.scss */
+#site-navigation #logo a img {
+  width: 130px;
+}
+/* line 57, ../sass/_general.scss */
+#site-navigation .navbar-collapse {
+  text-align: center;
+}
+/* line 61, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav {
+  float: none;
+  display: inline-block;
+}
+/* line 66, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav > li > a {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 12px;
+  padding: 8px 0;
+}
+/* line 78, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav > li.active > a, #site-navigation .navbar-collapse .navbar-nav > li:hover > a, #site-navigation .navbar-collapse .navbar-nav > li:focus > a {
+  background: none;
+  border-bottom: 2px solid #706539;
+}
+
+/* line 91, ../sass/_general.scss */
+#menu-social {
+  margin-top: 0 !important;
+}
+/* line 94, ../sass/_general.scss */
+#menu-social ul li a::before {
+  color: #ffffff;
+}
+
+/* line 102, ../sass/_general.scss */
+#menu-social-items li a {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+}
+/* line 109, ../sass/_general.scss */
+#menu-social-items .fb-icon a:before {
+  content: '\f09a';
+}
+/* line 112, ../sass/_general.scss */
+#menu-social-items .tw-icon a:before {
+  content: '\f099';
+}
+/* line 115, ../sass/_general.scss */
+#menu-social-items .ig-icon a:before {
+  content: '\f16d';
+}
+/* line 118, ../sass/_general.scss */
+#menu-social-items .yt-icon a:before {
+  content: '\f16a';
+}
