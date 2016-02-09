@@ -67,6 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* Colors */
 /* line 2, ../sass/_general.scss */
 .basic h1, .basic h2, .basic h3, .basic h4, .basic h5, .basic h6 {
   color: #282828;
@@ -104,28 +105,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 40, ../sass/_general.scss */
 #site-navigation {
   background: rgba(112, 101, 57, 0) none repeat scroll 0 0;
-  margin-top: 15px;
   padding-left: 60px;
   padding-right: 60px;
+  margin-bottom: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-/* line 47, ../sass/_general.scss */
-#site-navigation #logo {
+/* line 52, ../sass/_general.scss */
+#site-navigation .small-logo {
   position: absolute;
+  top: 15px;
 }
-/* line 51, ../sass/_general.scss */
-#site-navigation #logo a img {
-  width: 130px;
+/* line 56, ../sass/_general.scss */
+#site-navigation .small-logo img {
+  width: 100px;
+  height: auto;
+  opacity: 0;
 }
-/* line 57, ../sass/_general.scss */
+/* line 63, ../sass/_general.scss */
 #site-navigation .navbar-collapse {
   text-align: center;
+  padding-top: 15px;
 }
-/* line 61, ../sass/_general.scss */
+/* line 67, ../sass/_general.scss */
 #site-navigation .navbar-collapse .navbar-nav {
   float: none;
   display: inline-block;
 }
-/* line 66, ../sass/_general.scss */
+/* line 72, ../sass/_general.scss */
 #site-navigation .navbar-collapse .navbar-nav > li > a {
   font-family: 'Ubuntu Condensed', sans-serif;
   text-transform: uppercase;
@@ -133,40 +143,74 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0 12px;
   padding: 8px 0;
 }
-/* line 78, ../sass/_general.scss */
+/* line 84, ../sass/_general.scss */
 #site-navigation .navbar-collapse .navbar-nav > li.active > a, #site-navigation .navbar-collapse .navbar-nav > li:hover > a, #site-navigation .navbar-collapse .navbar-nav > li:focus > a {
   background: none;
-  border-bottom: 2px solid #706539;
+  border-bottom: 2px solid #88A755;
 }
 
-/* line 91, ../sass/_general.scss */
+/* line 96, ../sass/_general.scss */
 #menu-social {
   margin-top: 0 !important;
 }
-/* line 94, ../sass/_general.scss */
+/* line 99, ../sass/_general.scss */
 #menu-social ul li a::before {
   color: #ffffff;
 }
 
-/* line 102, ../sass/_general.scss */
+/* line 107, ../sass/_general.scss */
 #menu-social-items li a {
   line-height: 0;
   font-size: 0;
   color: transparent;
 }
-/* line 109, ../sass/_general.scss */
+/* line 114, ../sass/_general.scss */
 #menu-social-items .fb-icon a:before {
   content: '\f09a';
 }
-/* line 112, ../sass/_general.scss */
+/* line 117, ../sass/_general.scss */
 #menu-social-items .tw-icon a:before {
   content: '\f099';
 }
-/* line 115, ../sass/_general.scss */
+/* line 120, ../sass/_general.scss */
 #menu-social-items .ig-icon a:before {
   content: '\f16d';
 }
-/* line 118, ../sass/_general.scss */
+/* line 123, ../sass/_general.scss */
 #menu-social-items .yt-icon a:before {
   content: '\f16a';
+}
+
+/* line 128, ../sass/_general.scss */
+#header.minify #site-navigation .small-logo img {
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* line 138, ../sass/_general.scss */
+#header.minify #site-navigation {
+  background: #88A755;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* line 152, ../sass/_general.scss */
+#hero {
+  position: relative;
+}
+/* line 155, ../sass/_general.scss */
+#hero > #logo {
+  position: absolute;
+  left: 60px;
+  top: 15px;
+  width: 145px;
+  height: auto;
+  z-index: 999;
 }

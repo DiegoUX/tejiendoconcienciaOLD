@@ -38,26 +38,32 @@
 // Nav...
 
 #site-navigation {
-	 // background: rgba(112, 101, 57, 0.33) none repeat scroll 0 0;
-	 background: rgba(112, 101, 57, 0) none repeat scroll 0 0;
-	 margin-top: 15px;
-	 padding-left: 60px;
-	 padding-right: 60px;
+	// background: rgba(112, 101, 57, 0.33) none repeat scroll 0 0;
+	background: rgba(112, 101, 57, 0) none repeat scroll 0 0;
+	padding-left: 60px;
+	padding-right: 60px;
+	margin-bottom: 0;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 
-	#logo {
+	.small-logo {
 		position: absolute;
+		top: 15px;
 
-		a {
-			img {
-				width: 130px;
-			}
+		img {
+			width: 100px;
+			height: auto;
+			opacity: 0;
 		}
 	}
 
 	.navbar-collapse {
 		text-align: center;
+		padding-top: 15px;
 		
-
 		.navbar-nav {
 			float: none;
 			display: inline-block;
@@ -77,8 +83,7 @@
 				&:focus {
 					> a {
 						background: none;
-						border-bottom: 2px solid rgba(112, 101, 57, 1);
-						// border-bottom: 2px solid rgba(255, 255, 255, 1);
+						border-bottom: 2px solid $mainGreen;
 					}
 				}
 			}	    
@@ -117,5 +122,42 @@
 	}
 	.yt-icon a:before {
 		content: '\f16a';
+	}
+}
+
+#header.minify #site-navigation .small-logo img {
+	opacity: 1;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+#header.minify {
+	#site-navigation {
+		background: $mainGreen;
+		-webkit-transition: all 0.4s ease;
+  		-moz-transition: all 0.4s ease;
+  		-ms-transition: all 0.4s ease;
+  		-o-transition: all 0.4s ease;
+  		transition: all 0.4s ease;
+		 // -webkit-filter: blur(10px);
+		 //  filter: url('/media/blur.svg#blur');
+		 //  filter: blur(10px);
+		// background: rgba(0, 0, 0, 0) linear-gradient(to top, rgba(42, 43, 47, 0.01) 38%, #2a2b2f 65%) repeat scroll 0 0;
+	}
+}
+
+#hero {
+	position: relative;
+
+	> #logo {
+		position: absolute;
+	    left: 60px;
+	    top: 15px;
+	    width: 145px;
+	    height: auto;
+	    z-index: 999;
 	}
 }
