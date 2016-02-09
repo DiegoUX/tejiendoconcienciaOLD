@@ -69,14 +69,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Colors */
 /* line 2, ../sass/_general.scss */
-.basic h1, .basic h2, .basic h3, .basic h4, .basic h5, .basic h6 {
-  color: #282828;
+body.basic h1, body.basic h2, body.basic h3, body.basic h4, body.basic h5, body.basic h6 {
+  color: #555555;
   font-family: 'Ubuntu Condensed', sans-serif !important;
   text-transform: uppercase;
 }
 /* line 8, ../sass/_general.scss */
-.basic h1 a, .basic h2 a, .basic h3 a, .basic h4 a, .basic h5 a, .basic h6 a {
-  color: #282828;
+body.basic h1 a, body.basic h2 a, body.basic h3 a, body.basic h4 a, body.basic h5 a, body.basic h6 a {
+  color: #555555;
 }
 
 /* line 15, ../sass/_general.scss */
@@ -117,7 +117,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 52, ../sass/_general.scss */
 #site-navigation .small-logo {
   position: absolute;
-  top: 15px;
+  top: 20px;
 }
 /* line 56, ../sass/_general.scss */
 #site-navigation .small-logo img {
@@ -128,7 +128,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 63, ../sass/_general.scss */
 #site-navigation .navbar-collapse {
   text-align: center;
-  padding-top: 15px;
+  padding: 12px 0 10px;
 }
 /* line 67, ../sass/_general.scss */
 #site-navigation .navbar-collapse .navbar-nav {
@@ -141,47 +141,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-transform: uppercase;
   color: #ffffff;
   margin: 0 12px;
-  padding: 8px 0;
+  padding: 5px 0;
 }
 /* line 84, ../sass/_general.scss */
 #site-navigation .navbar-collapse .navbar-nav > li.active > a, #site-navigation .navbar-collapse .navbar-nav > li:hover > a, #site-navigation .navbar-collapse .navbar-nav > li:focus > a {
   background: none;
   border-bottom: 2px solid #88A755;
 }
-
+/* line 91, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav > li.orange:hover a {
+  border-bottom: 2px solid #F4B562;
+}
 /* line 96, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav > li.violet:hover a {
+  border-bottom: 2px solid #AE8EDD;
+}
+/* line 101, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav > li.lightGreen:hover a {
+  border-bottom: 2px solid #B2D875;
+}
+/* line 106, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav > li.pink:hover a {
+  border-bottom: 2px solid #F77FEE;
+}
+/* line 111, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav > li.coral:hover a {
+  border-bottom: 2px solid #EF8E7B;
+}
+/* line 116, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav > li.turquoise:hover a {
+  border-bottom: 2px solid #7FEAD8;
+}
+/* line 121, ../sass/_general.scss */
+#site-navigation .navbar-collapse .navbar-nav > li.yellow:hover a {
+  border-bottom: 2px solid #E0C761;
+}
+
+/* line 132, ../sass/_general.scss */
 #menu-social {
   margin-top: 0 !important;
 }
-/* line 99, ../sass/_general.scss */
+/* line 135, ../sass/_general.scss */
 #menu-social ul li a::before {
   color: #ffffff;
 }
 
-/* line 107, ../sass/_general.scss */
+/* line 143, ../sass/_general.scss */
 #menu-social-items li a {
   line-height: 0;
   font-size: 0;
   color: transparent;
 }
-/* line 114, ../sass/_general.scss */
+/* line 150, ../sass/_general.scss */
 #menu-social-items .fb-icon a:before {
   content: '\f09a';
 }
-/* line 117, ../sass/_general.scss */
+/* line 153, ../sass/_general.scss */
 #menu-social-items .tw-icon a:before {
   content: '\f099';
 }
-/* line 120, ../sass/_general.scss */
+/* line 156, ../sass/_general.scss */
 #menu-social-items .ig-icon a:before {
   content: '\f16d';
 }
-/* line 123, ../sass/_general.scss */
+/* line 159, ../sass/_general.scss */
 #menu-social-items .yt-icon a:before {
   content: '\f16a';
 }
 
-/* line 128, ../sass/_general.scss */
+/* line 164, ../sass/_general.scss */
 #header.minify #site-navigation .small-logo img {
   opacity: 1;
   -webkit-transition: all 0.4s ease;
@@ -191,7 +219,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: all 0.4s ease;
 }
 
-/* line 138, ../sass/_general.scss */
+/* line 174, ../sass/_general.scss */
 #header.minify #site-navigation {
   background: #88A755;
   -webkit-transition: all 0.4s ease;
@@ -200,12 +228,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+/* line 193, ../sass/_general.scss */
+#header.minify #site-navigation .navbar-collapse .navbar-nav > li.active > a, #header.minify #site-navigation .navbar-collapse .navbar-nav > li:hover > a, #header.minify #site-navigation .navbar-collapse .navbar-nav > li:focus > a {
+  background: none;
+  border-bottom: 2px solid #FFFFFF;
+}
 
-/* line 152, ../sass/_general.scss */
+/* line 204, ../sass/_general.scss */
 #hero {
   position: relative;
 }
-/* line 155, ../sass/_general.scss */
+/* line 207, ../sass/_general.scss */
 #hero > #logo {
   position: absolute;
   left: 60px;

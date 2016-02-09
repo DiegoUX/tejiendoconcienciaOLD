@@ -51,28 +51,21 @@ get_header();
 			<?php
 		}
 	?>
-
-	<div class="container">
-		<div class="row">
-			<div id="primary" <?php bavotasan_primary_attr(); ?>>
-				<?php
-				while ( have_posts() ) : the_post();
-					?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-					    <div class="entry-content description clearfix">
-						    <?php the_content( __( 'Read more', 'arcade') ); ?>
-					    </div><!-- .entry-content -->
-
-					    <?php get_template_part( 'content', 'footer' ); ?>
-					</article><!-- #post-<?php the_ID(); ?> -->
-
-					<?php
-				endwhile;
-				?>
+	<section class="counter">
+		<div class="container">
+			<div class="row">		
+				<div class="col-md-4">
+					1
+				</div>
+				<div class="col-md-4">
+					1
+				</div>
+				<div class="col-md-4">
+					1
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!-- Blog (template-post-block content) -->
 	<div class="container from-the-blog">
